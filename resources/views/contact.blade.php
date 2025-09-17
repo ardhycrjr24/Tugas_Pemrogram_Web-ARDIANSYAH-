@@ -75,9 +75,7 @@
     </div>
   </div>
 </div>
-
-
-  </div>
+</div>
 </div>
 @endsection
 
@@ -116,6 +114,7 @@
     emailField.style.display = whatsappField.style.display = "none";
   });
 </script>
+
 @endsection
 
 @push('styles')

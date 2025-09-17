@@ -135,7 +135,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <script>
-
         // Hitung jumlah item di keranjang
         function updateCartCount() {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -144,7 +143,6 @@
         }
         document.addEventListener("DOMContentLoaded", updateCartCount);
     </script>
-
     @yield('scripts')
 </body>
 </html>

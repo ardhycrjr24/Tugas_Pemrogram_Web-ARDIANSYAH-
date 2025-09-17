@@ -144,13 +144,13 @@
 
     <!-- Custom CSS -->
     <style>
-        /* Tombol navigasi carousel lebih besar & putih bersih */
+        /* Tombol navigasi carousel */
         .carousel-control-prev-icon,
         .carousel-control-next-icon {
             width: 3rem;
             height: 3rem;
             background-size: 100% 100%;
-            filter: invert(1); /* bikin ikon jadi putih */
+            filter: invert(1);
         }
 
         .custom-control {
@@ -158,5 +158,4 @@
             border: none;
         }
     </style>
-
 @endsection

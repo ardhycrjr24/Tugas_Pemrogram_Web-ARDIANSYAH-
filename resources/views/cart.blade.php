@@ -84,7 +84,7 @@
         loadCart();
     }
 
-    // tombol checkout (contoh: reset cart)
+    // tombol checkout
     document.addEventListener("DOMContentLoaded", () => {
         loadCart();
         document.getElementById("checkoutBtn").addEventListener("click", () => {

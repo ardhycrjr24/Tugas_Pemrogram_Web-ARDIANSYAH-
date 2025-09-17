@@ -6,7 +6,7 @@
 <div class="container py-4">
     <h2 class="mb-4 text-center fw-bold">🍊 Katalog Produk</h2>
 
-    <!-- 🔍 Input Pencarian -->
+    <!-- Input Pencarian -->
     <div class="row mb-4">
         <div class="col-12 col-md-6 mx-auto">
             <input type="text" id="searchInput" class="form-control form-control-lg shadow-sm"
@@ -14,7 +14,7 @@
         </div>
     </div>
 
-    <!-- 🛒 Daftar Produk -->
+    <!-- Daftar Produk -->
     <div class="row" id="produkList">
         @foreach ($products as $product)
             <div class="col-6 col-md-4 col-lg-3 mb-4 produk-item">
@@ -33,7 +33,7 @@
                             {{ $product['deskripsi'] }}
                         </p>
 
-                        <!-- ⭐ Rating Dinamis untuk buah -->
+                        <!-- Rating Dinamis untuk buah -->
                         <p class="text-warning mb-2">
                             @for ($i = 1; $i <= 5; $i++)
                                 <i class="bi {{ $i <= round($product['rating']) ? 'bi-star-fill' : 'bi-star' }}"></i>
@@ -61,7 +61,7 @@
 
 @section('scripts')
 <script>
-// 🔍 Pencarian produk
+// Pencarian produk
 function cariProduk() {
     const input = document.getElementById("searchInput").value.trim().toLowerCase();
     const items = document.querySelectorAll("#produkList .produk-item");
@@ -102,7 +102,7 @@ function addToCart(nama, harga, gambar) {
     alert("✅ " + nama + " ditambahkan ke keranjang!");
 }
 
-// jalankan saat halaman siap
+// kondisi jalankan saat halaman siap
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("searchInput").addEventListener("input", cariProduk);
 });
