@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield('title') | T O B U </title>
+
     <!-- Bootstrap 5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
@@ -45,9 +46,7 @@
 
         /* 🎨 Custom Navbar */
         .custom-navbar {
-            /* margin: 15px auto; */   /* ❌ dinonaktifkan */
             width: 100%; /* ✅100% penuh kiri-kanan */
-            /* border-radius: 15px; */ /* kalau tidak mau rounded */
             background: linear-gradient(90deg, rgba(0,176,155,0.9), rgba(150,201,61,0.9));
             backdrop-filter: blur(8px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
@@ -136,6 +135,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet">
 
     <script>
+
         // Hitung jumlah item di keranjang
         function updateCartCount() {
             let cart = JSON.parse(localStorage.getItem("cart")) || [];
